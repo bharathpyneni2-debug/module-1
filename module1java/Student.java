@@ -1,0 +1,33 @@
+// Program 10: Student Class and Object
+import java.util.Scanner;
+
+class Student {
+    String name;
+    int age;
+    double marks;
+
+    void inputDetails() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter student name: ");
+        name = sc.nextLine();
+        System.out.print("Enter age: ");
+        age = sc.nextInt();
+        System.out.print("Enter marks: ");
+        marks = sc.nextDouble();
+    }
+
+    void displayDetails() {
+        System.out.println("\nStudent Details:");
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Marks: " + marks);
+    }
+}
+
+class StudentDemo {
+    public static void main(String[] args) {
+        Student s1 = new Student();
+        s1.inputDetails();
+        s1.displayDetails();
+    }
+}
